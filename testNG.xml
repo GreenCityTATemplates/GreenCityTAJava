@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" configfailurepolicy="continue" verbose="1" parallel="classes" thread-count="3">
+
+
+    <test name="Sign-in tests" thread-count="3">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_in.LoginTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_in.ErrorMessagesTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_in.SignInButtonTest"></class>
+        </classes>
+    </test>
+    <test name="Sign_up_DB_use" thread-count="1">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.SignUpPersonTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.SignUpWithGoogleTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.SignUpPersonWithVerifyEmailTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.SignUpPersonWithoutVerifyEmailTest"></class>
+        </classes>
+    </test>
+    <test name="UbsUser_tests" thread-count="3">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.ubs_user.EmptyUbsUserOrderPageTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.ubs_user.OrderCancellationTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.ubs_user.OrderPageTest"></class>
+        </classes>
+    </test>
+    <test name="Sign_up_simple" thread-count="3">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.CloseSignUpPopUpTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.SignUpErrorMessageTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.sign_up.SignUpVisibilityOfInputPasswordTest"></class>
+        </classes>
+    </test>
+    <test name="Orders_tests" thread-count="3">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.AddNewAddressTest"></class>
+<<<<<<< HEAD
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.ErrorMessagesInPersonalDataPage"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.OrderDetailsPageCertificateTest"></class>
+=======
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.OrderPersonalDataPageTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.OrderDetailsPageTest"></class>
+>>>>>>> b41b97699c9841a3887719a27f59fa3baee03b02
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.OrderPageConfirmationTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.PaymentByFondyTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.SelectRegionAfterSignInTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.SelectRegionLocalizationTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.orders.ValidationOfCommentTest"></class>
+        </classes>
+    </test>
+    <test name="User_data" thread-count="5">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.user_data.EditAddressDataTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.user_data.EditPersonalDataTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.user_data.LocalizationUserDataPageTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.user_data.VerifyMessageChangePassword"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.user_data.ChangeCurrentPassword"></class>
+        </classes>
+    </test>
+    <test name="Admin_customers" thread-count="1">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.admin.customers.AdminCustomersTest"></class>
+        </classes>
+    </test>
+
+    <test name="Employees" thread-count="3">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.employees.EmployeesErrorMessagesTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.employees.CreateEmployeesTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.employees.SetOfEmployeesTest"></class>
+        </classes>
+
+    </test>
+    <test name="Ubs_homepage" thread-count="3">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.ubs_homepage.UbsHomePageTest"></class>
+        </classes>
+    </test>
+
+    <test name="Header_test" thread-count="1">
+        <classes>
+            <class name="com.ita.edu.greencity.tests.ui.pages.header.HeaderSignedInTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.header.HeaderTest"></class>
+            <class name="com.ita.edu.greencity.tests.ui.pages.header.LocalizationHeaderTest"></class>
+        </classes>
+    </test>
+    <!--<test name="UI Tests" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.ita.edu.teachua.ui.tests.RestorePasswordViaGmailApiTest"/>
+        </classes>
+    </test>-->
+</suite>
